@@ -50,8 +50,11 @@ const Work = () => {
        
     </div>
     </div>
+
+    
     <Buld/>
   </div>;
+  
 };
 
 export default Work;
