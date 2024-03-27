@@ -14,7 +14,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="mt-12 h2 text-center mb-8"
+            className="mt-8 h2 text-center mb-8"
           >
             Let&apos;s <span className="text-accent">connect.</span>
           </motion.h2>
@@ -24,7 +24,7 @@ const Contact = () => {
            animate="show" 
            exit='hidden'
           
-          className="flex-1 flex flex-col gap-5 w-full mx-auto">
+          className="flex-1 flex flex-col gap-4 w-full mx-auto">
             <div className="flex  gap-x-6 w-full">
               <input type="text" placeholder="name" className="input" />
               <input type="text" placeholder="email" className="input" />
