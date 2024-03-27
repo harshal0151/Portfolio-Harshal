@@ -3,95 +3,109 @@ import { loadFull } from "tsparticles";
 import React, { useCallback } from "react";
 
 const ParticlesContainer = () => {
-  //init
+  // Init function to load particles library
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
-  const particlesLoaded = useCallback(async () => {}, []);
+
+  // Callback function when particles are loaded
+  const particlesLoaded = useCallback(async () => {
+    console.log("Particles loaded!");
+  }, []);
 
   return (
-    <Particles 
-    className="w-full h-full absolute translate-z-0"
-     id ='tsparticles' 
-     init ={particlesInit} 
-     loaded={particlesLoaded}
-    options={{
-      fullScreen:{enable:false},
-      background:{
-        color:{
-          value: '',
-        }
-      },
-      fpsLimit:120,
-      interactivity:{
-        events:{
-          onClick:{
-            enable: false,
-            mode: 'push',
-          }, 
-          onHover: {
-            enable: true,  
-            mode: 'repulse',  
-          },
-          resize: true,
-        },
-        modes:{
-          push:{
-            quantity:90
-          },
-          repulse:{
-            distance:200,
-            duration:0.4,
+    <Particles
+      className="w-full h-full absolute translate-z-0"
+      id="tsparticles"
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={{
+        fullScreen: { enable: true },
+        background: {
+          color: {
+            value: "#",
           },
         },
-      },
-      particles:{
-        colors: {
-          value: '#e68e2e' ,
+        fpsLimit: 60,
+        interactivity: {
+          events: {
+            onHover: {
+              enable: true,
+              mode: "grab",
+            },
+            onClick: {
+              enable: true,
+              mode: "push",
+            },
+          },
+          modes: {
+            grab: {
+              distance: 150,
+              line_linked: {
+                opacity: 0.5,
+              },
+            },
+            push: {
+              particles_nb: 4,
+            },
+          },
         },
-        links: { 
-           color: '#f5d393',
-           distance: 150,
-           enable: true,
-           opacity: 0.5,
-           width: 1,
-         },
-         collisions: {
-          enable: true,
-         },
-         move: {
-           direction: 'none',
-           enable: true,
-           outMode: {
-            default: 'bounce'
-           },
-           random: false,
-           speed: 1,
-           straight: false,
-         
+        particles: {
+          color: {
+            value: "#e68e2e",
+          },
+          links: {
+            color: "#f5d393",
+            distance: 150,
+            enable: true,
+            opacity: 0.5,
+            width: 1,
+          },
+          collisions: {
+            enable: true,
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            random: true,
+            straight: false,
+            out_mode: "out",
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
           },
           number: {
+            value: 80,
             density: {
               enable: true,
-              area: 800   
+              value_area: 800,
             },
-            value:80
-            },
-          opacity: {
-            
-            anim: {
-              value:0.5,
-            },
-            shape:{
-              type:"circle"
-            },
-            size: {
-              value : {min: 1, max: 5}
-            }, 
           },
-          detectRatina: true,
+          opacity: {
+            value: 0.5,
+            anim: {
+              enable: true,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 5,
+            random: true,
+            anim: {
+              enable: true,
+              speed: 2,
+              size_min: 0.1,
+              sync: false,
+            },
+          },
         },
-    }}/>
+      }}
+    />
   );
 };
 

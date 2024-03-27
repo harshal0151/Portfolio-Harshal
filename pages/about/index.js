@@ -103,7 +103,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-5 xl:mb-12 px-0.8 xl:px-0"
           >
             Graduate of computer science with experience working across the full-stack of Web development. In the last six months, I&apos;ve gained valuable remote experience
             working with CraveDigi and collaborating on digital products for
@@ -157,7 +157,7 @@ const About = () => {
           exit="hidden"
           className="flex flex-col w-full xl:max-w-[48%] h-[300px]"
         >
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+          <div className=" flex gap-x-4  xl:gap-x-8 mx-auto xl:mx-0 mb-4 text-[0.7rem]  ">
             {aboutData.map((item, itemIndex) => (
               <div
                 key={itemIndex}

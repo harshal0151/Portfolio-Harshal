@@ -5,10 +5,13 @@ import Avatar from "../components/Avatar";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import ProjectsBtn from "../components/ProjectsBtn";
+import Circles from '../components/Circles';
+
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-full">
+    <div className="bg-primary/30 h-full">
+       <Circles />
       {/* text */}
       <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
         <div className='text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto'>
@@ -17,8 +20,8 @@ const Home = () => {
             initial="hidden" 
             animate="show" 
             exit='hidden' 
-            className="h1 mt-12">
-            Hello I&apos;m, Harshal Patil <br />{" "}
+            className="h1 mt-[4rem]">
+            Hello I&apos;m, Harshal Patil <br />
             <span className="text-accent">web Developer</span>
           </motion.h1>
           <motion.p 
@@ -50,7 +53,8 @@ const Home = () => {
         <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full absolute mix-blend-color-dodge translate-y-0 "></div>
 
         {/* particals */}
-        <ParticlesContainer/>
+        {/* <ParticlesContainer/> */}
+      
         {/* Avatar  img*/}
         <motion.div 
           variants={fadeIn('up', 0.5)} 
@@ -62,6 +66,7 @@ const Home = () => {
           <Avatar/>
         </motion.div>
       </div>
+      
     </div>
   );
 };
