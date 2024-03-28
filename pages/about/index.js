@@ -134,7 +134,7 @@ const About = () => {
               {/* graduation  */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className=" text-2xl xl:text-4xl font-extrabold text-accent mb-2"> 20
-                  <Countup start={0} end={23} duration={5} />
+                  <Countup start={0} end={23} duration={10} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Year of graduation
@@ -174,7 +174,9 @@ const About = () => {
               </div>
             ))}
           </div>
-          <div className=" py-3 xl:p-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start border border-x-4 border-indigo-300 rounded-xl mt-5 ">
+          <div className="border-0 py-3 xl:p-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start mt-5
+            border-x-4 xl:border-collapse rounded-xl
+         "> 
             {aboutData[index].info.map((item, itemIndex) => (
               <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60  ">
                 {/* title  */}
