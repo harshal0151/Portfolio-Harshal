@@ -4,56 +4,88 @@ const workSlides = {
     {
       images: [
         {
+          title: "Tours APP",
+          path: "/thumb1.jpg",
+          githubLink: "https://github.com/harshal0151/Tours_system",
+          liveLink: "https://mern-tourapp.netlify.app/home",
+        },
+       
+        {
+          title: "Gym-UI",
+          path: "/thumb4.jpg",
+          githubLink: "https://github.com/harshal0151/The-November-Room",
+          liveLink: "https://harshal0151.github.io/The-November-Room/",
+        },
+        {
+          title: "Aria-UI",
+          path: "/thumb4.jpg",
+          githubLink: "https://github.com/harshal0151/Aria_ui",
+          liveLink: "https://harshal0151.github.io/Aria_ui/index.html",
+        },
+        {
           title: "Hershey-UI",
           path: "/thumb1.jpg",
           githubLink: "https://github.com/harshal0151/Hershey-UI",
           liveLink: "https://sudhanshusudan33.github.io/Hershey-UI/",
         },
+  
+      ],
+    },
+    {
+      images: [
         {
-          title: "2",
+          title: "UsabilityHub-UI",
           path: "/thumb2.jpg",
-          githubLink: "https://github.com/example2",
-          liveLink: "https://example2.com",
-        },
+          githubLink: "https://github.com/harshal0151/UsabilityHub-clone",
+          liveLink: "https://usabilityhun-clone.netlify.app/",
+        }, 
         {
-          title: "3",
+          title: "nike-UI",
           path: "/thumb3.jpg",
-          githubLink: "https://github.com/example3",
-          liveLink: "https://example3.com",
+          githubLink: "https://github.com/harshal0151/nike-Landing_page",
+          liveLink: "https://nike-shoes-landingpage.netlify.app/",
+        },
+       
+        {
+          title: "E-commerce",
+          path: "/thumb2.jpg",
+          githubLink: "https://github.com/harshal0151/E-commerce-React-app",
+          liveLink: "https://gofashionstar.netlify.app/",
         },
         {
-          title: "4",
-          path: "/thumb4.jpg",
-          githubLink: "https://github.com/example4",
-          liveLink: "https://example4.com",
+          title: "Survey Form",
+          path: "/thumb3.jpg",
+          githubLink: "https://github.com/harshal0151/Survey_form",
+          liveLink: "https://surveyform-2122.netlify.app/",
         },
       ],
     },
     {
       images: [
         {
-          title: "5",
-          path: "/thumb4.jpg",
-          githubLink: "https://github.com/example5",
-          liveLink: "https://example5.com",
-        },
-        {
-          title: "6",
-          path: "/thumb1.jpg",
-          githubLink: "https://github.com/example6",
-          liveLink: "https://example6.com",
-        },
-        {
-          title: "7",
+          title: "3D Calculater",
           path: "/thumb2.jpg",
-          githubLink: "https://github.com/example7",
-          liveLink: "https://example7.com",
+          githubLink: "https://github.com/harshal0151/3D_Calculater",
+          liveLink: "https://3d-calculater.netlify.app/",
+        }, 
+        {
+          title: "Pepsi-Hero",
+          path: "/thumb3.jpg",
+          githubLink: "https://github.com/harshal0151/Pepsi_landing_page",
+          liveLink: "https://pepsi-website-landingpage.netlify.app/",
+        },
+       
+        {
+          title: "E-commerce",
+          path: "/thumb2.jpg",
+          githubLink: "https://github.com/harshal0151/E-commerce-React-app",
+          liveLink: "https://gofashionstar.netlify.app/",
         },
         {
-          title: "8",
+          title: "Survey Form",
           path: "/thumb3.jpg",
-          githubLink: "https://github.com/example8",
-          liveLink: "https://example8.com",
+          githubLink: "https://github.com/harshal0151/Survey_form",
+          liveLink: "https://surveyform-2122.netlify.app/",
         },
       ],
     },

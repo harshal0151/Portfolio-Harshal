@@ -10,7 +10,6 @@ import Circles from '../../components/Circles'
 //famer motion
 import {motion} from 'framer-motion';
 import {fadeIn} from '../../variants';
-import Socials from '../../components/Socials';
 
 const Work = () => {
   return <div  className='h-full bg-primary/30 py-36 flex items-center '>
