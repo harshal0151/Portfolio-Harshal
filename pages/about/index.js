@@ -38,15 +38,7 @@ const aboutData = [
       },
     ],
   },
-  {
-    title: "certification",
-    info: [
-      {
-        title: "MERN-stack Development",
-        stage: "Oct 2023 - April 2024",
-      },
-    ],
-  },
+  
   {
     title: "experience",
     info: [
@@ -65,11 +57,21 @@ const aboutData = [
       },
     ],
   },
+  {
+    title: "certification",
+    info: [
+      {
+        title: "MERN-stack Development",
+        stage: "Oct 2023 - April 2024",
+      },
+    ],
+  },
 ];
 
 //components
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
+import Bulb from '../../components/Bulb'
 
 //famer motion
 import { motion } from "framer-motion";
@@ -83,6 +85,7 @@ const About = () => {
   
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+      <Bulb/>
       <Circles />
 
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
@@ -130,8 +133,8 @@ const About = () => {
               </div>
               {/* graduation  */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className=" text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <Countup start={0} end={2023} duration={5} />
+                <div className=" text-2xl xl:text-4xl font-extrabold text-accent mb-2"> 20
+                  <Countup start={0} end={23} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Year of graduation
@@ -157,13 +160,13 @@ const About = () => {
           exit="hidden"
           className="flex flex-col w-full xl:max-w-[48%] h-[300px]"
         >
-          <div className=" flex gap-x-4  xl:gap-x-8 mx-auto xl:mx-0 mb-4 text-[0.7rem]  ">
+          <div className=" flex items-center justify-center gap-x-4  xl:gap-x-8 mx-auto xl:mx-0 mb-4 text-[0.7rem]  ">
             {aboutData.map((item, itemIndex) => (
               <div
                 key={itemIndex}
                 className={`${
                   index === itemIndex &&
-                  "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
+                  "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300 "
                 } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-accent after:absolute after:-bottom-1 after:left-0`}
                 onClick={() => setIndex(itemIndex)}
               >
@@ -171,9 +174,9 @@ const About = () => {
               </div>
             ))}
           </div>
-          <div className=" py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className=" py-3 xl:p-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start border border-x-4 border-indigo-300 rounded-xl mt-5 ">
             {aboutData[index].info.map((item, itemIndex) => (
-              <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
+              <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60  ">
                 {/* title  */}
                 <div className="font-light mb-2 md:mb-0 ">{item.title}</div>
                 <div className="hidden md:flex">-</div>
