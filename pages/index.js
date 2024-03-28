@@ -6,11 +6,15 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Circles from '../components/Circles';
+import Bulb from '../components/Bulb';
+
+
 
 
 const Home = () => {
   return (
     <div className="bg-primary/30 h-full">
+      <Bulb/>
        <Circles />
       {/* text */}
       <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
