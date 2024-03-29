@@ -1,6 +1,4 @@
-import React from 'react';
-import Image from "next/image";
-import ParticlesContainer from "../components/ParticlesContainer";
+import React, { useState, useEffect } from 'react';
 import Avatar from "../components/Avatar";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -8,46 +6,63 @@ import ProjectsBtn from "../components/ProjectsBtn";
 import Circles from '../components/Circles';
 import Bulb from '../components/Bulb';
 
+const BetaNotification = ({ setShowBetaNotification }) => {
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShowBetaNotification(false);
+    }, 5000); // Adjust the time as needed (5000 milliseconds = 5 seconds)
+    return () => clearTimeout(timeout);
+  }, [setShowBetaNotification]); // Add setShowBetaNotification as dependency
 
-
+  return (
+    <div 
+    
+    className=" text-center fixed  top-[9rem] left-2 border  bg-white text-accent p-3 rounded-lg shadow">
+      App under development - Feedback appreciated!
+    </div>
+  );
+};
 
 const Home = () => {
+  const [showBetaNotification, setShowBetaNotification] = useState(true);
+
   return (
     <div className="bg-primary/30 h-full">
-      <Bulb/>
-       <Circles />
+      {showBetaNotification && <BetaNotification setShowBetaNotification={setShowBetaNotification} />}
+      <Bulb />
+      <Circles />
       {/* text */}
       <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
         <div className='text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto'>
-          <motion.h1 
-            variants={fadeIn('down', 0.2)} 
-            initial="hidden" 
-            animate="show" 
-            exit='hidden' 
+          <motion.h1
+            variants={fadeIn('down', 0.2)}
+            initial="hidden"
+            animate="show"
+            exit='hidden'
             className="h1 mt-[4rem]">
             Hello I&apos;m, Harshal Patil <br />
             <span className="text-accent">web Developer</span>
           </motion.h1>
-          <motion.p 
-            variants={fadeIn('down', 0.3)} 
-            initial="hidden" 
-            animate="show" 
-            exit='hidden' 
+          <motion.p
+            variants={fadeIn('down', 0.3)}
+            initial="hidden"
+            animate="show"
+            exit='hidden'
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-16">
             Graduate of computer science with experience working across the full-stack of Web development. Looking for a role where I can grow and learn from experienced team members while drawing on project experience I have already successfully executed
           </motion.p>
 
           <div className="flex justify-center xl:hidden relative">
-            <ProjectsBtn/>
+            <ProjectsBtn />
           </div>
 
-          <motion.div 
-            variants={fadeIn('down', 0.4)} 
-            initial="hidden" 
-            animate="show" 
+          <motion.div
+            variants={fadeIn('down', 0.4)}
+            initial="hidden"
+            animate="show"
             exit='hidden'
             className="hidden xl:flex">
-            <ProjectsBtn/>
+            <ProjectsBtn />
           </motion.div>
         </div>
       </div>
@@ -58,19 +73,18 @@ const Home = () => {
 
         {/* particals */}
         {/* <ParticlesContainer/> */}
-      
-        {/* Avatar  img*/}
-        <motion.div 
-          variants={fadeIn('up', 0.5)} 
+
+        {/* Avatar img*/}
+        <motion.div
+          variants={fadeIn('up', 0.5)}
           initial="hidden"
-          animate="show" 
-          exit='hidden' 
-          transition={{duration: 1 , ease:'easeInOut'}}  
+          animate="show"
+          exit='hidden'
+          transition={{ duration: 1, ease: 'easeInOut' }}
           className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-5 lg:right-[5%]">
-          <Avatar/>
+          <Avatar />
         </motion.div>
       </div>
-      
     </div>
   );
 };
