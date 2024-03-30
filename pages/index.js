@@ -10,16 +10,19 @@ const BetaNotification = ({ setShowBetaNotification }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowBetaNotification(false);
-    }, 5000); // Adjust the time as needed (5000 milliseconds = 5 seconds)
+    }, 4000); // Adjust the time as needed (5000 milliseconds = 5 seconds)
     return () => clearTimeout(timeout);
   }, [setShowBetaNotification]); // Add setShowBetaNotification as dependency
 
   return (
-    <div 
-    
-    className=" text-center fixed  top-[9rem] left-2 border  bg-white text-accent p-3 rounded-lg shadow">
-      App under development - Feedback appreciated!
-    </div>
+    <motion.div 
+    variants={fadeIn('right', 0.2)}
+    initial="hidden"
+    animate="show"
+    exit='hidden'
+    className="absolute h-full w-full flex items-center justify-center z-50 ">
+      <h3 className='text-center bg-white text-accent p-3  border rounded-lg shadow ' >App under development - Feedback appreciated !</h3>
+    </motion.div>
   );
 };
 
