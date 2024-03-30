@@ -62,14 +62,13 @@ const aboutData = [
     info: [
       {
         title: "MERN-stack Development",
-        stage: "Oct 2023 - April 2024",
+        stage: "",
       },
     ],
   },
 ];
 
-//components
-import Avatar from "../../components/Avatar";
+//component
 import Circles from "../../components/Circles";
 import Bulb from '../../components/Bulb'
 
