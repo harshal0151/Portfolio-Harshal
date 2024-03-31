@@ -7,7 +7,7 @@ const workSlides = {
           title: "Tours APP",
           path: "/Tour.png",
           githubLink: "https://github.com/harshal0151/Tours_system",
-          liveLink: "https://mern-tourapp.netlify.app/home",
+          liveLink: "https://tours-system-h.vercel.app/home",
         },
         {
           title: "E-commerce",
