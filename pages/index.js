@@ -6,32 +6,12 @@ import ProjectsBtn from "../components/ProjectsBtn";
 import Circles from '../components/Circles';
 import Bulb from '../components/Bulb';
 
-const BetaNotification = ({ setShowBetaNotification }) => {
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setShowBetaNotification(false);
-    }, 4000); // Adjust the time as needed (5000 milliseconds = 5 seconds)
-    return () => clearTimeout(timeout);
-  }, [setShowBetaNotification]); // Add setShowBetaNotification as dependency
-
-  return (
-    <motion.div 
-    variants={fadeIn('right', 0.2)}
-    initial="hidden"
-    animate="show"
-    exit='hidden'
-    className="absolute h-full w-full flex items-center justify-center z-50 ">
-      <h3 className='text-center bg-white text-accent p-3  border rounded-lg shadow ' >App under development - Feedback appreciated !</h3>
-    </motion.div>
-  );
-};
 
 const Home = () => {
   const [showBetaNotification, setShowBetaNotification] = useState(true);
 
   return (
     <div className="bg-primary/30 h-full">
-      {showBetaNotification && <BetaNotification setShowBetaNotification={setShowBetaNotification} />}
       <Bulb />
       <Circles />
       {/* text */}
