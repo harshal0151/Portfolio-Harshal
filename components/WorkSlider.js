@@ -10,6 +10,12 @@ const workSlides = {
           liveLink: "https://tours-system-h.vercel.app/home",
         },
         {
+          title: "Epic Game Clone",
+          path: "/Home.png",
+          githubLink: "https://github.com/harshal0151/Epic_Games-Clone",
+          liveLink: "https://epic-games-clone-one.vercel.app/",
+        },
+        {
           title: "E-commerce",
           path: "/E-commers.png",
           githubLink: "https://github.com/harshal0151/E-commerce-React-app",
@@ -23,17 +29,18 @@ const workSlides = {
           githubLink: "https://github.com/harshal0151/Hershey-UI",
           liveLink: "https://sudhanshusudan33.github.io/Hershey-UI/",
         },
+    
+  
+      ],
+    },
+    {
+      images: [
         {
           title: "nike-UI",
           path: "/nike.png",
           githubLink: "https://github.com/harshal0151/nike-Landing_page",
           liveLink: "https://nike-shoes-landingpage.netlify.app/",
         },
-  
-      ],
-    },
-    {
-      images: [
         {
           title: "Gym-UI",
           path: "/Gym1.png",
@@ -54,12 +61,7 @@ const workSlides = {
         },
        
       
-        {
-          title: "Survey Form",
-          path: "/Form.png",
-          githubLink: "https://github.com/harshal0151/Survey_form",
-          liveLink: "https://surveyform-2122.netlify.app/",
-        },
+        
       ],
     },
     {
@@ -75,6 +77,12 @@ const workSlides = {
           path: "/pepsi.png",
           githubLink: "https://github.com/harshal0151/Pepsi_landing_page",
           liveLink: "https://pepsi-website-landingpage.netlify.app/",
+        },
+        {
+          title: "Survey Form",
+          path: "/Form.png",
+          githubLink: "https://github.com/harshal0151/Survey_form",
+          liveLink: "https://surveyform-2122.netlify.app/",
         },
        
         // {
