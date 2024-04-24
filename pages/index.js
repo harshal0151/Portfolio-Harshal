@@ -5,6 +5,7 @@ import { fadeIn } from "../variants";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Circles from '../components/Circles';
 import Bulb from '../components/Bulb';
+import Socials from '../components/Socials';
 
 
 const Home = () => {
@@ -64,8 +65,14 @@ const Home = () => {
           animate="show"
           exit='hidden'
           transition={{ duration: 1, ease: 'easeInOut' }}
-          className="w-full h-full max-w-[537px] max-h-[548px] absolute -bottom-32 lg:bottom-5 lg:right-[5%]">
+          className="w-full h-full max-w-[537px] max-h-[548px] absolute -bottom-32 lg:bottom-5 lg:right-[5%] ">
           <Avatar />
+          <div className=' w-full m-10 px-[30px]'>
+         Email:  patilharshal0151@gmail.com
+          </div>
+          <div className='w-full m-10 px-[100px]'>
+          <Socials />
+          </div>
         </motion.div>
       </div>
     </div>
