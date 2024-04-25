@@ -15,13 +15,7 @@ const workSlides = {
           githubLink: "https://github.com/harshal0151/Epic_Games-Clone",
           liveLink: "https://epic-games-clone-one.vercel.app/",
         },
-        {
-          title: "E-commerce",
-          path: "/E-commers.png",
-          githubLink: "https://github.com/harshal0151/E-commerce-React-app",
-          liveLink: "https://gofashionstar.netlify.app/",
-        },
-        
+     
     
         {
           title: "Hershey-UI",
@@ -29,12 +23,26 @@ const workSlides = {
           githubLink: "https://github.com/harshal0151/Hershey-UI",
           liveLink: "https://sudhanshusudan33.github.io/Hershey-UI/",
         },
+
+        {
+          title: "Weather App",
+          path: "/weather.png",
+          githubLink: "https://github.com/harshal0151/weather-App-",
+          liveLink: "https://weather-apinew.vercel.app/",
+        },
     
   
       ],
     },
     {
       images: [
+        {
+          title: "E-commerce",
+          path: "/E-commers.png",
+          githubLink: "https://github.com/harshal0151/E-commerce-React-app",
+          liveLink: "https://gofashionstar.netlify.app/",
+        },
+        
         {
           title: "nike-UI",
           path: "/nike.png",
@@ -53,12 +61,7 @@ const workSlides = {
           githubLink: "https://github.com/harshal0151/UsabilityHub-clone",
           liveLink: "https://usabilityhun-clone.netlify.app/",
         }, 
-        {
-          title: "Aria-UI",
-          path: "/Aria2.png",
-          githubLink: "https://github.com/harshal0151/Aria_ui",
-          liveLink: "https://harshal0151.github.io/Aria_ui/index.html",
-        },
+     
        
       
         
@@ -66,6 +69,13 @@ const workSlides = {
     },
     {
       images: [
+        {
+          title: "Aria-UI",
+          path: "/Aria2.png",
+          githubLink: "https://github.com/harshal0151/Aria_ui",
+          liveLink: "https://harshal0151.github.io/Aria_ui/index.html",
+        },
+        
         {
           title: "3D Calculater",
           path: "/calculater.png",
@@ -85,12 +95,6 @@ const workSlides = {
           liveLink: "https://surveyform-2122.netlify.app/",
         },
        
-        // {
-        //   title: "E-commerce",
-        //   path: "/thumb2.jpg",
-        //   githubLink: "https://github.com/harshal0151/E-commerce-React-app",
-        //   liveLink: "https://gofashionstar.netlify.app/",
-        // },
         // {
         //   title: "Survey Form",
         //   path: "/thumb3.jpg",
