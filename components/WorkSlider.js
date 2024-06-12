@@ -9,40 +9,38 @@ const workSlides = {
           githubLink: "https://github.com/harshal0151/Tours_system",
           liveLink: "https://tours-system-h.vercel.app/home",
         },
+
+        {
+          title: "Home Decor",
+          path: "/e-com.png",
+          githubLink: "https://github.com/harshal0151/E-commerce-React-",
+          liveLink: "https://e-commerce-react-bay.vercel.app/",
+        },
+
         {
           title: "Epic Game Clone",
           path: "/Home.png",
           githubLink: "https://github.com/harshal0151/Epic_Games-Clone",
           liveLink: "https://epic-games-clone-one.vercel.app/",
         },
-     
-    
+
         {
           title: "Hershey-UI",
           path: "/Hershey1.png",
           githubLink: "https://github.com/harshal0151/Hershey-UI",
           liveLink: "https://sudhanshusudan33.github.io/Hershey-UI/",
         },
-
+      ],
+    },
+    {
+      images: [
         {
           title: "Weather App",
           path: "/weather.png",
           githubLink: "https://github.com/harshal0151/weather-App-",
           liveLink: "https://weather-apinew.vercel.app/",
         },
-    
-  
-      ],
-    },
-    {
-      images: [
-        {
-          title: "E-commerce",
-          path: "/E-commers.png",
-          githubLink: "https://github.com/harshal0151/E-commerce-React-app",
-          liveLink: "https://gofashionstar.netlify.app/",
-        },
-        
+
         {
           title: "nike-UI",
           path: "/nike.png",
@@ -60,11 +58,7 @@ const workSlides = {
           path: "/clone.png",
           githubLink: "https://github.com/harshal0151/UsabilityHub-clone",
           liveLink: "https://usabilityhun-clone.netlify.app/",
-        }, 
-     
-       
-      
-        
+        },
       ],
     },
     {
@@ -75,37 +69,17 @@ const workSlides = {
           githubLink: "https://github.com/harshal0151/Aria_ui",
           liveLink: "https://harshal0151.github.io/Aria_ui/index.html",
         },
-        
+
         {
-          title: "3D Calculater",
-          path: "/calculater.png",
-          githubLink: "https://github.com/harshal0151/3D_Calculater",
-          liveLink: "https://3d-calculater.netlify.app/",
-        }, 
-        {
-          title: "Pepsi-Hero",
-          path: "/pepsi.png",
-          githubLink: "https://github.com/harshal0151/Pepsi_landing_page",
-          liveLink: "https://pepsi-website-landingpage.netlify.app/",
+          title: "E-commerce",
+          path: "/E-commers.png",
+          githubLink: "https://github.com/harshal0151/E-commerce-React-app",
+          liveLink: "https://gofashionstar.netlify.app/",
         },
-        {
-          title: "Survey Form",
-          path: "/Form.png",
-          githubLink: "https://github.com/harshal0151/Survey_form",
-          liveLink: "https://surveyform-2122.netlify.app/",
-        },
-       
-        // {
-        //   title: "Survey Form",
-        //   path: "/thumb3.jpg",
-        //   githubLink: "https://github.com/harshal0151/Survey_form",
-        //   liveLink: "https://surveyform-2122.netlify.app/",
-        // },
       ],
     },
   ],
 };
-
 
 // import swiper react components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -145,7 +119,7 @@ const WorkSlider = () => {
               {slide.images.map((image, index) => {
                 return (
                   <div
-                    className= "relative rounded-lg overflow-hidden flex items-center justify-center group"
+                    className="relative rounded-lg overflow-hidden flex items-center justify-center group"
                     key={index}
                   >
                     <div className="flex items-center justify-center relative overflow-hidden group ">
@@ -163,32 +137,29 @@ const WorkSlider = () => {
                         <div className="text-center gap-x-2 text-[13px] tracking-[0.2em]">
                           {/* title 1  */}
                           <div className="delay-100">{image.title}</div>
-                         
-                         <div className="flex gap-2">
-                              {/* title 1  */}
-                          <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150 border border-sky-200 py-1 px-3 rounded-lg bg-white text-black">
-                          <Link
-                              href={image.liveLink}
-                              className="hover:text-accent transition-all duration-300 "
-                            >
-                              LIVE 
-                            </Link>                            
-                          </div>
-                          
 
-                          {/*  icon  */}
-                          <div className=" text-xl  translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200  border border-sky-100  py-1 px-3 rounded-lg bg-transparent  ">
-                            <Link
-                              href={image.githubLink}
-                              className="hover:text-accent transition-all duration-300"
-                            >
-                              <RiGithubLine />
-                            </Link>
+                          <div className="flex gap-2">
+                            {/* title 1  */}
+                            <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150 border border-sky-200 py-1 px-3 rounded-lg bg-white text-black">
+                              <Link
+                                href={image.liveLink}
+                                className="hover:text-accent transition-all duration-300 "
+                              >
+                                LIVE
+                              </Link>
+                            </div>
+
+                            {/*  icon  */}
+                            <div className=" text-xl  translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200  border border-sky-100  py-1 px-3 rounded-lg bg-transparent  ">
+                              <Link
+                                href={image.githubLink}
+                                className="hover:text-accent transition-all duration-300"
+                              >
+                                <RiGithubLine />
+                              </Link>
+                            </div>
                           </div>
                         </div>
-
-                         </div>
-                       
                       </div>
                     </div>
                   </div>
