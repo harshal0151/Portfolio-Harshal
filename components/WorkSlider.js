@@ -25,10 +25,10 @@ const workSlides = {
         },
 
         {
-          title: "Hershey-UI",
-          path: "/Hershey1.png",
-          githubLink: "https://github.com/harshal0151/Hershey-UI",
-          liveLink: "https://sudhanshusudan33.github.io/Hershey-UI/",
+          title: "Portfolio-App",
+          path: "/portfolio.png",
+          githubLink: "https://github.com/harshal0151/Portfolio-Harshal",
+          liveLink: "https://portfolio-harshal.vercel.app/",
         },
       ],
     },
@@ -39,6 +39,12 @@ const workSlides = {
           path: "/weather.png",
           githubLink: "https://github.com/harshal0151/weather-App-",
           liveLink: "https://weather-apinew.vercel.app/",
+        },
+        {
+          title: "Hershey-UI",
+          path: "/Hershey1.png",
+          githubLink: "https://github.com/harshal0151/Hershey-UI",
+          liveLink: "https://sudhanshusudan33.github.io/Hershey-UI/",
         },
 
         {
@@ -53,12 +59,7 @@ const workSlides = {
           githubLink: "https://github.com/harshal0151/The-November-Room",
           liveLink: "https://harshal0151.github.io/The-November-Room/",
         },
-        {
-          title: "UsabilityHub-UI",
-          path: "/clone.png",
-          githubLink: "https://github.com/harshal0151/UsabilityHub-clone",
-          liveLink: "https://usabilityhun-clone.netlify.app/",
-        },
+        
       ],
     },
     {
@@ -75,6 +76,12 @@ const workSlides = {
           path: "/E-commers.png",
           githubLink: "https://github.com/harshal0151/E-commerce-React-app",
           liveLink: "https://gofashionstar.netlify.app/",
+        },
+        {
+          title: "UsabilityHub-UI",
+          path: "/clone.png",
+          githubLink: "https://github.com/harshal0151/UsabilityHub-clone",
+          liveLink: "https://usabilityhun-clone.netlify.app/",
         },
       ],
     },
