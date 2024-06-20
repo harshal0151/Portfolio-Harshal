@@ -12,16 +12,16 @@ const serviceData = [
     title: 'Frontend',
     description: 'React,  Redux, ',
   },
-  {
-    icon: <RxReader />,
-    title: 'Backend',
-    description: 'Express, NodeJS',
-  },
-  {
-    icon: <RxRocket />,
-    title: 'Database',
-    description: 'MongoDB, SQL',
-  },
+  // {
+  //   icon: <RxReader />,
+  //   title: 'Backend',
+  //   description: 'Express, NodeJS',
+  // },
+  // {
+  //   icon: <RxRocket />,
+  //   title: 'Database',
+  //   description: 'MongoDB, SQL',
+  // },
 ];
 
 // import swiper react components

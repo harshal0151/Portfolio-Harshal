@@ -29,7 +29,7 @@ const aboutData = [
           <FaCss3 key="css" />,
           <FaJs key="js" />,
           <FaReact key="react" />,
-          <SiNextdotjs key="nextjs" />,
+          // <SiNextdotjs key="nextjs" />,
         ],
       },
       {
@@ -43,7 +43,7 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Full-stack Web Developer - CraveDigi Advisors",
+        title: "Intern Web Developer - At CraveDigi Advisors",
         stage: "Oct 2023 - April 2024",
       },
     ],
