@@ -43,7 +43,7 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Intern Web Developer - At CraveDigi Advisors",
+        title: "Frontend Developer Intern - At CraveDigi Advisors",
         stage: "Oct 2023 - April 2024",
       },
     ],
@@ -107,7 +107,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-5 xl:mb-12 px-0.8 xl:px-0"
           >
-            Graduate of computer science with experience working across the full-stack of Web development. In the last six months, I&apos;ve gained valuable remote experience
+            Graduate of computer science with experience working across the Frontend Web development. In the last six months, I&apos;ve gained valuable remote experience
             working with CraveDigi and collaborating on digital products for
             both business and consumer use.
           </motion.p>

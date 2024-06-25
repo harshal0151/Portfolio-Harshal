@@ -30,7 +30,7 @@ const Work = () => {
            initial="hidden"
            animate="show"
            exit= "hidden"
-          className='mb-4 max-w-[400px] mx-auto lg:mx-0'>Ability to develop full stack websites work with HTML5, CSS3, Javasript with ReactJS fremwork and Node.js ,Express.js, MongoDB.</motion.p>
+          className='mb-4 max-w-[400px] mx-auto lg:mx-0 leading-7'>Ability to develop   Frontend App  work with HTML5, CSS3,Tailwind Css, Javasript with ReactJS library.</motion.p>
           <div className='xl:mt-8 flex justify-center sm:justify-start w-full'>
             
             
