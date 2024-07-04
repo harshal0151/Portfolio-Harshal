@@ -4,6 +4,13 @@ const workSlides = {
     {
       images: [
         {
+          title: "Food-App",
+          path: "/foodApp.png",
+          githubLink: "https://github.com/harshal0151/FoodApp-React",
+          liveLink: "https://food-app-react-cyan.vercel.app/",
+        },
+
+        {
           title: "Tours APP",
           path: "/Tour.png",
           githubLink: "https://github.com/harshal0151/Tours_system",
@@ -18,13 +25,6 @@ const workSlides = {
         },
 
         {
-          title: "Epic Game Clone",
-          path: "/Home.png",
-          githubLink: "https://github.com/harshal0151/Epic_Games-Clone",
-          liveLink: "https://epic-games-clone-one.vercel.app/",
-        },
-
-        {
           title: "Portfolio-App",
           path: "/portfolio.png",
           githubLink: "https://github.com/harshal0151/Portfolio-Harshal",
@@ -34,6 +34,12 @@ const workSlides = {
     },
     {
       images: [
+        {
+          title: "EpicGame",
+          path: "/Home.png",
+          githubLink: "https://github.com/harshal0151/Epic_Games-Clone",
+          liveLink: "https://epic-games-clone-one.vercel.app/",
+        },
         {
           title: "Weather App",
           path: "/weather.png",
@@ -53,17 +59,16 @@ const workSlides = {
           githubLink: "https://github.com/harshal0151/nike-Landing_page",
           liveLink: "https://nike-shoes-landingpage.netlify.app/",
         },
+      ],
+    },
+    {
+      images: [
         {
           title: "Gym-UI",
           path: "/Gym1.png",
           githubLink: "https://github.com/harshal0151/The-November-Room",
           liveLink: "https://harshal0151.github.io/The-November-Room/",
         },
-        
-      ],
-    },
-    {
-      images: [
         {
           title: "Aria-UI",
           path: "/Aria2.png",
