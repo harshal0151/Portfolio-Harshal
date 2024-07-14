@@ -16,7 +16,12 @@ const workSlides = {
           githubLink: "https://github.com/harshal0151/Tours_system",
           liveLink: "https://tours-system-h.vercel.app/home",
         },
-
+        {
+          title: "Movie App",
+          path: "/movie.png",
+          githubLink: "https://github.com/harshal0151/Movie_ReactApp",
+          liveLink: "https://movie-react-app-livid.vercel.app/",
+        },
         {
           title: "Home Decor",
           path: "/e-com.png",
@@ -24,16 +29,19 @@ const workSlides = {
           liveLink: "https://e-commerce-react-bay.vercel.app/",
         },
 
+     
+
+      ],
+    },
+    {
+      images: [
+        
         {
           title: "Portfolio-App",
           path: "/portfolio.png",
           githubLink: "https://github.com/harshal0151/Portfolio-Harshal",
           liveLink: "https://portfolio-harshal.vercel.app/",
         },
-      ],
-    },
-    {
-      images: [
         {
           title: "EpicGame",
           path: "/Home.png",
@@ -41,10 +49,10 @@ const workSlides = {
           liveLink: "https://epic-games-clone-one.vercel.app/",
         },
         {
-          title: "Weather App",
-          path: "/weather.png",
-          githubLink: "https://github.com/harshal0151/weather-App-",
-          liveLink: "https://weather-apinew.vercel.app/",
+          title: "nike-UI",
+          path: "/nike.png",
+          githubLink: "https://github.com/harshal0151/nike-Landing_page",
+          liveLink: "https://nike-shoes-landingpage.netlify.app/",
         },
         {
           title: "Hershey-UI",
@@ -53,41 +61,21 @@ const workSlides = {
           liveLink: "https://sudhanshusudan33.github.io/Hershey-UI/",
         },
 
-        {
-          title: "nike-UI",
-          path: "/nike.png",
-          githubLink: "https://github.com/harshal0151/nike-Landing_page",
-          liveLink: "https://nike-shoes-landingpage.netlify.app/",
-        },
+    
       ],
     },
     {
       images: [
+  
         {
           title: "Gym-UI",
           path: "/Gym1.png",
           githubLink: "https://github.com/harshal0151/The-November-Room",
           liveLink: "https://harshal0151.github.io/The-November-Room/",
         },
-        {
-          title: "Aria-UI",
-          path: "/Aria2.png",
-          githubLink: "https://github.com/harshal0151/Aria_ui",
-          liveLink: "https://harshal0151.github.io/Aria_ui/index.html",
-        },
+     
 
-        {
-          title: "E-commerce",
-          path: "/E-commers.png",
-          githubLink: "https://github.com/harshal0151/E-commerce-React-app",
-          liveLink: "https://gofashionstar.netlify.app/",
-        },
-        {
-          title: "UsabilityHub-UI",
-          path: "/clone.png",
-          githubLink: "https://github.com/harshal0151/UsabilityHub-clone",
-          liveLink: "https://usabilityhun-clone.netlify.app/",
-        },
+     
       ],
     },
   ],
