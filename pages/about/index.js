@@ -107,12 +107,12 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-5 xl:mb-12 px-0.8 xl:px-0"
           >
-            I'm a Frontend Developer with expertise in HTML, CSS, JavaScript,
-            and frameworks like React and Redux. I gained practical experience
-            at CraveDigi Advisors Pvt. Ltd., and I'm skilled in TypeScript and
-            Webpack. My projects include a Budget-Wise Vacation Planner and a
-            Food Booking AI Recipes Generator, reflecting my ability to create
-            responsive, dynamic web applications.
+            I&apos;m a Frontend Developer with expertise in HTML, CSS,
+            JavaScript, and frameworks like React and Redux. I gained practical
+            experience at CraveDigi Advisors Pvt. Ltd., and I&apos;m skilled in
+            TypeScript and Webpack. My projects include a Budget-Wise Vacation
+            Planner and a Food Booking AI Recipes Generator, reflecting my
+            ability to create responsive, dynamic web applications.
           </motion.p>
 
           {/* counter  */}
