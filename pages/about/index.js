@@ -38,7 +38,7 @@ const aboutData = [
       },
     ],
   },
-  
+
   {
     title: "experience",
     info: [
@@ -70,7 +70,7 @@ const aboutData = [
 
 //component
 import Circles from "../../components/Circles";
-import Bulb from '../../components/Bulb'
+import Bulb from "../../components/Bulb";
 
 //famer motion
 import { motion } from "framer-motion";
@@ -81,10 +81,10 @@ import Countup from "react-countup";
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  
+
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
-      <Bulb/>
+      <Bulb />
       <Circles />
 
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
@@ -107,9 +107,19 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-5 xl:mb-12 px-0.8 xl:px-0"
           >
-            Graduate of computer science with experience working across the Frontend Web development. In the last six months, I&apos;ve gained valuable remote experience
-            working with CraveDigi and collaborating on digital products for
-            both business and consumer use.
+            Hello 👋 I'm a passionate Frontend Developer with a strong
+            foundation in HTML, CSS, JavaScript, and expertise in modern
+            libraries and frameworks such as Tailwind, React, and Redux, I have
+            practical experience from an internship at CraveDigi Advisors Pvt.
+            Ltd., where I enhanced user experiences, interfaces, and implemented
+            scalable design solutions. I proficiency extends to TypeScript and
+            Webpack, emphasizing type-safe data handling and dynamic frontend
+            development. Additionally, I have a solid educational background in
+            Computer Engineering and have successfully completed projects like a
+            Budget-Wise Vacation Planner System and a Food Booking and AI
+            Recipes Generator, showcasing your ability to develop responsive web
+            applications, manage state effectively, and leverage AI for
+            personalized user experiences.
           </motion.p>
 
           {/* counter  */}
@@ -132,7 +142,9 @@ const About = () => {
               </div>
               {/* graduation  */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className=" text-2xl xl:text-4xl font-extrabold text-accent mb-2"> 20
+                <div className=" text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  {" "}
+                  20
                   <Countup start={0} end={23} duration={10} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
@@ -173,19 +185,26 @@ const About = () => {
               </div>
             ))}
           </div>
-          <div className="border-0 py-3 xl:p-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start mt-5
+          <div
+            className="border-0 py-3 xl:p-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start mt-5
             border-x-4 xl:border-collapse rounded-xl
-         "> 
+         "
+          >
             {aboutData[index].info.map((item, itemIndex) => (
-              <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60  ">
+              <div
+                key={itemIndex}
+                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60  "
+              >
                 {/* title  */}
                 <div className="font-light mb-2 md:mb-0 ">{item.title}</div>
                 <div className="hidden md:flex">-</div>
                 <div>{item.stage}</div>
                 <div className="flex gap-x-4">
-                                   {/* icons  */}
-                                   {item.icons?.map((icon, iconIndex) => (
-                    <div key={iconIndex} className="text-2xl text-white">{icon}</div>
+                  {/* icons  */}
+                  {item.icons?.map((icon, iconIndex) => (
+                    <div key={iconIndex} className="text-2xl text-white">
+                      {icon}
+                    </div>
                   ))}
                 </div>
               </div>
@@ -198,5 +217,3 @@ const About = () => {
 };
 
 export default About;
-
-
