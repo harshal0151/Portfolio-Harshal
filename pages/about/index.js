@@ -107,19 +107,12 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-5 xl:mb-12 px-0.8 xl:px-0"
           >
-            Hello 👋 I'm a passionate Frontend Developer with a strong
-            foundation in HTML, CSS, JavaScript, and expertise in modern
-            libraries and frameworks such as Tailwind, React, and Redux, I have
-            practical experience from an internship at CraveDigi Advisors Pvt.
-            Ltd., where I enhanced user experiences, interfaces, and implemented
-            scalable design solutions. I proficiency extends to TypeScript and
-            Webpack, emphasizing type-safe data handling and dynamic frontend
-            development. Additionally, I have a solid educational background in
-            Computer Engineering and have successfully completed projects like a
-            Budget-Wise Vacation Planner System and a Food Booking and AI
-            Recipes Generator, showcasing your ability to develop responsive web
-            applications, manage state effectively, and leverage AI for
-            personalized user experiences.
+            I'm a Frontend Developer with expertise in HTML, CSS, JavaScript,
+            and frameworks like React and Redux. I gained practical experience
+            at CraveDigi Advisors Pvt. Ltd., and I'm skilled in TypeScript and
+            Webpack. My projects include a Budget-Wise Vacation Planner and a
+            Food Booking AI Recipes Generator, reflecting my ability to create
+            responsive, dynamic web applications.
           </motion.p>
 
           {/* counter  */}
