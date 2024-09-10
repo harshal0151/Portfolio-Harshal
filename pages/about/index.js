@@ -1,21 +1,9 @@
 import React, { useState } from "react";
 
 // icons
-import {
+import { FaJs, FaReact, FaNode } from "react-icons/fa";
 
-  FaJs,
-  FaReact,
-  FaNode
-} from "react-icons/fa";
-
-import {
-  SiExpress,
-  SiMongodb,
-  SiTailwindcss,
-  SiRedux
-} from "react-icons/si";
-
-
+import { SiExpress, SiMongodb, SiTailwindcss, SiRedux } from "react-icons/si";
 
 //  data
 const aboutData = [
@@ -34,7 +22,6 @@ const aboutData = [
           <SiMongodb key="mongodb" />,
         ],
       },
-      
     ],
   },
 
@@ -106,11 +93,11 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-5 xl:mb-12 px-0.8 xl:px-0"
           >
-            I'm a passionate web Developer with
-            a strong foundation in web app development using the MERN stack.
-            With over 6 months of experience as a Frontend Intern at CraveDigi
-            Advisors Pvt. Ltd., I have honed my skills in building responsive
-            and interactive web applications.
+            I am a passionate Frontend Developer with a strong foundation in web
+            app development using the MERN stack. I&apos;ve gained over 6 months
+            of experience as a Frontend Intern at CraveDigi Advisors Pvt. Ltd. I
+            have honed my skills in building responsive and interactive web
+            applications.
           </motion.p>
 
           {/* counter  */}
