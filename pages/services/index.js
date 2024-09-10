@@ -22,13 +22,13 @@ const Services = () => {
             initial="hidden"
             animate="show"
             exit= "hidden"
-           className='h2 md:mt-0 mt-[4rem]'>What Do I  <span className='text-accent'>Help.</span></motion.h2>
+           className='h2 md:mt-0 mt-[4rem]'>Technical   <span className='text-accent'>skills.</span></motion.h2>
           <motion.p
            variants={fadeIn('up', 0.4)}
            initial="hidden"
            animate="show"
            exit= "hidden"
-          className='mb-4 max-w-[400px] mx-auto lg:mx-0 leading-7'>Ability to develop   Frontend App  work with HTML5, CSS3,Tailwind Css, Javasript with ReactJS library.</motion.p>
+          className='mb-4 max-w-[400px] mx-auto lg:mx-0 leading-7'>Ability to develop Web App work with HTML5, CSS3,Tailwind Css, Javasript with ReactJS library. And for a backend Node , Express.js  , MondoDB </motion.p>
         </div>
 
         <motion.div

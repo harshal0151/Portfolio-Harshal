@@ -2,20 +2,20 @@ import React, { useState } from "react";
 
 // icons
 import {
-  FaHtml5,
-  FaCss3,
+
   FaJs,
   FaReact,
-  FaWordpress,
-  FaFigma,
+  FaNode
 } from "react-icons/fa";
 
 import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
+  SiExpress,
+  SiMongodb,
+  SiTailwindcss,
+  SiRedux
 } from "react-icons/si";
+
+
 
 //  data
 const aboutData = [
@@ -25,17 +25,16 @@ const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 key="html" />,
-          <FaCss3 key="css" />,
           <FaJs key="js" />,
           <FaReact key="react" />,
-          // <SiNextdotjs key="nextjs" />,
+          <SiTailwindcss key="tailwindcss" />,
+          <SiRedux key="redux" />,
+          <FaNode key="node" />,
+          <SiExpress key="express" />,
+          <SiMongodb key="mongodb" />,
         ],
       },
-      {
-        title: "UI/UX Design",
-        icons: [<FaFigma key="figma" />],
-      },
+      
     ],
   },
 
@@ -107,12 +106,11 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-5 xl:mb-12 px-0.8 xl:px-0"
           >
-            I&apos;m a Frontend Developer with expertise in HTML, CSS,
-            JavaScript, and frameworks like React and Redux. I gained practical
-            experience at CraveDigi Advisors Pvt. Ltd., and I&apos;m skilled in
-            TypeScript and Webpack. My projects include a Budget-Wise Vacation
-            Planner and a Food Booking AI Recipes Generator, reflecting my
-            ability to create responsive, dynamic web applications.
+            I'm a passionate web Developer with
+            a strong foundation in web app development using the MERN stack.
+            With over 6 months of experience as a Frontend Intern at CraveDigi
+            Advisors Pvt. Ltd., I have honed my skills in building responsive
+            and interactive web applications.
           </motion.p>
 
           {/* counter  */}

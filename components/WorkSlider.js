@@ -17,17 +17,19 @@ const workSlides = {
           liveLink: "https://tours-system-h.vercel.app/home",
         },
         {
-          title: "Movie App",
-          path: "/movie.png",
-          githubLink: "https://github.com/harshal0151/Movie_ReactApp",
-          liveLink: "https://movie-react-app-livid.vercel.app/",
-        },
-        {
           title: "Home Decor",
           path: "/e-com.png",
           githubLink: "https://github.com/harshal0151/E-commerce-React-",
           liveLink: "https://e-commerce-react-bay.vercel.app/",
         },
+        {
+          title: "LinkedIn Voice Navigator",
+          path: "/Thumbnail_Extensions.png",
+          githubLink: "https://github.com/harshal0151/LinkedIn-Voice-Navigator-and-Quick-Access-to-Saved-Posts-Extension",
+          liveLink: "https://www.linkedin.com/posts/harshal-patil-187a87245_javascript-webdevelopment-frontenddevelopment-activity-7196932421496254466-TNUi?utm_source=share&utm_medium=member_desktop",
+        },
+       
+       
 
      
 
@@ -35,6 +37,12 @@ const workSlides = {
     },
     {
       images: [
+         {
+          title: "Movie App",
+          path: "/movie.png",
+          githubLink: "https://github.com/harshal0151/Movie_ReactApp",
+          liveLink: "https://movie-react-app-livid.vercel.app/",
+        },
         
         {
           title: "Portfolio-App",
@@ -42,18 +50,7 @@ const workSlides = {
           githubLink: "https://github.com/harshal0151/Portfolio-Harshal",
           liveLink: "https://portfolio-harshal.vercel.app/",
         },
-        {
-          title: "EpicGame",
-          path: "/Home.png",
-          githubLink: "https://github.com/harshal0151/Epic_Games-Clone",
-          liveLink: "https://epic-games-clone-one.vercel.app/",
-        },
-        {
-          title: "nike-UI",
-          path: "/nike.png",
-          githubLink: "https://github.com/harshal0151/nike-Landing_page",
-          liveLink: "https://nike-shoes-landingpage.netlify.app/",
-        },
+       
         {
           title: "Hershey-UI",
           path: "/Hershey1.png",
@@ -61,11 +58,24 @@ const workSlides = {
           liveLink: "https://sudhanshusudan33.github.io/Hershey-UI/",
         },
 
+        {
+          title: "nike-UI",
+          path: "/nike.png",
+          githubLink: "https://github.com/harshal0151/nike-Landing_page",
+          liveLink: "https://nike-shoes-landingpage.netlify.app/",
+        },
+       
     
       ],
     },
     {
       images: [
+        {
+          title: "EpicGame",
+          path: "/Home.png",
+          githubLink: "https://github.com/harshal0151/Epic_Games-Clone",
+          liveLink: "https://epic-games-clone-one.vercel.app/",
+        },
   
         {
           title: "Gym-UI",

@@ -25,7 +25,7 @@ const Home = () => {
             exit='hidden'
             className="h1 mt-[4rem]">
             Hello I&apos;m, Harshal Patil <br />
-            <span className="text-accent">web Developer</span>
+            <span className="text-accent">Web Developer</span>
           </motion.h1>
           <motion.p
             variants={fadeIn('down', 0.3)}
@@ -33,7 +33,7 @@ const Home = () => {
             animate="show"
             exit='hidden'
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-16">
-            Graduate of computer science with experience working across the Frontend Developer. Looking for a role where I can grow and learn from experienced team members while drawing on project experience I have already successfully executed
+            Graduate of computer science with experience working across the Web Developer. Looking for a role where I can grow and learn from experienced team members while drawing on project experience I have already successfully executed
           </motion.p>
 
           <div className="flex justify-center xl:hidden relative">

@@ -2,26 +2,26 @@
 
 // data
 const serviceData = [
-  {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Figma',
-  },
+  // {
+  //   icon: <RxPencil2 />,
+  //   title: 'Design',
+  //   description: 'Figma',
+  // },
   {
     icon: <RxDesktop />,
     title: 'Frontend',
     description: 'React,  Redux, ',
   },
-  // {
-  //   icon: <RxReader />,
-  //   title: 'Backend',
-  //   description: 'Express, NodeJS',
-  // },
-  // {
-  //   icon: <RxRocket />,
-  //   title: 'Database',
-  //   description: 'MongoDB, SQL',
-  // },
+  {
+    icon: <RxReader />,
+    title: 'Backend',
+    description: 'Express, NodeJS',
+  },
+  {
+    icon: <RxRocket />,
+    title: 'Database',
+    description: 'MongoDB, SQL',
+  },
 ];
 
 // import swiper react components
