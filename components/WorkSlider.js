@@ -25,32 +25,29 @@ const workSlides = {
         {
           title: "LinkedIn Voice Navigator",
           path: "/Thumbnail_Extensions.png",
-          githubLink: "https://github.com/harshal0151/LinkedIn-Voice-Navigator-and-Quick-Access-to-Saved-Posts-Extension",
-          liveLink: "https://www.linkedin.com/posts/harshal-patil-187a87245_javascript-webdevelopment-frontenddevelopment-activity-7196932421496254466-TNUi?utm_source=share&utm_medium=member_desktop",
+          githubLink:
+            "https://github.com/harshal0151/LinkedIn-Voice-Navigator-and-Quick-Access-to-Saved-Posts-Extension",
+          liveLink:
+            "https://www.linkedin.com/posts/harshal-patil-187a87245_javascript-webdevelopment-frontenddevelopment-activity-7196932421496254466-TNUi?utm_source=share&utm_medium=member_desktop",
         },
-       
-       
-
-     
-
       ],
     },
     {
       images: [
-         {
+        {
           title: "Movie App",
           path: "/movie.png",
           githubLink: "https://github.com/harshal0151/Movie_ReactApp",
           liveLink: "https://movie-react-app-livid.vercel.app/",
         },
-        
+
         {
           title: "Portfolio-App",
           path: "/portfolio.png",
           githubLink: "https://github.com/harshal0151/Portfolio-Harshal",
           liveLink: "https://portfolio-harshal.vercel.app/",
         },
-       
+
         {
           title: "Hershey-UI",
           path: "/Hershey1.png",
@@ -64,8 +61,6 @@ const workSlides = {
           githubLink: "https://github.com/harshal0151/nike-Landing_page",
           liveLink: "https://nike-shoes-landingpage.netlify.app/",
         },
-       
-    
       ],
     },
     {
@@ -76,16 +71,13 @@ const workSlides = {
           githubLink: "https://github.com/harshal0151/Epic_Games-Clone",
           liveLink: "https://epic-games-clone-one.vercel.app/",
         },
-  
+
         {
           title: "Gym-UI",
           path: "/Gym1.png",
           githubLink: "https://github.com/harshal0151/The-November-Room",
           liveLink: "https://harshal0151.github.io/The-November-Room/",
         },
-     
-
-     
       ],
     },
   ],
@@ -148,12 +140,12 @@ const WorkSlider = () => {
                           {/* title 1  */}
                           <div className="delay-100">{image.title}</div>
 
-                          <div className="flex gap-2">
+                          <div className="flex justify-center gap-2">
                             {/* title 1  */}
                             <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150 border border-sky-200 py-1 px-3 rounded-lg bg-white text-black">
                               <Link
                                 href={image.liveLink}
-                                className="hover:text-accent transition-all duration-300 "
+                                className="hover:text-accent transition-all duration-300  "
                               >
                                 LIVE
                               </Link>

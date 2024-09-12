@@ -29,14 +29,16 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0 leading-7"
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 leading-7 "
             >
               I have developed a web application using the MERN stack, focusing
               on efficient data handling and responsive UI. Additionally, I
               created a custom Chrome extension to enhance browser functionality
               and user experience.
             </motion.p>
-            <div className="xl:mt-8 flex justify-center sm:justify-start w-full"></div>
+            <div className="xl:mt-8 flex justify-center sm:justify-start w-full">
+            
+            </div>
           </div>
 
           <motion.div
