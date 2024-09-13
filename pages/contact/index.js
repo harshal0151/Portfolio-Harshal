@@ -12,17 +12,17 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false); // Loader state
+  const [loading, setLoading] = useState(false); 
 
   async function handleSubmit(e) {
     e.preventDefault();
-    setLoading(true); // Start loading
+    setLoading(true); 
 
     try {
       const response = await axios.post("https://nodemailer-app-n32c.onrender.com/sendEmail", {
         name,
         email,
-        subject, // Include subject
+        subject, 
         message,
       });
 
@@ -39,7 +39,7 @@ const Contact = () => {
       console.error(error);
       toast.error("There was an error sending your message. Please try again.");
     } finally {
-      setLoading(false); // Stop loading
+      setLoading(false); 
     }
   }
 
