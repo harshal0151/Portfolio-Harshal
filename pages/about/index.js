@@ -104,19 +104,20 @@ const About = () => {
           </motion.h2>
 
           <motion.p
-            variants={fadeIn("right", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-5 xl:mb-12 px-0.8 xl:px-0"
-          >
-            Software Developer with over 2 + years of experience building
-            scalable, responsive web applications using React and JavaScript.
-            Delivered eight successful web products, specializing in UI/UX best
-            practices, API integration, and performance optimization. Skilled in
-            frontend development, state management, and reusable components
-            within agile teams
-          </motion.p>
+  variants={fadeIn("right", 0.4)}
+  initial="hidden"
+  animate="show"
+  exit="hidden"
+  className="max-w-[500px] mx-auto xl:mx-0 mb-5 xl:mb-12 px-0.8 xl:px-0 hidden xl:block"
+>
+  Software Developer with over 2+ years of experience building
+  scalable, responsive web applications using React and JavaScript.
+  Delivered eight successful web products, specializing in UI/UX best
+  practices, API integration, and performance optimization. Skilled in
+  frontend development, state management, and reusable components
+  within agile teams.
+</motion.p>
+
 
           {/* counter  */}
           <motion.div

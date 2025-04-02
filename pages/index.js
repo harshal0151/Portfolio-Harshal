@@ -34,13 +34,11 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-16"
           >
-            Graduate in Computer Science and Software Developer with 2+ years of
-            experience building scalable, responsive web applications. I’ve
-            contributed to multiple high-impact projects, specializing in
-            full-stack development, performance optimization, and API
-            integration. Seeking a role where I can further grow, collaborate
-            with experienced teams, and continue to leverage my skills and
-            project experience.
+            Software Developer with 2+ years of experience in building scalable,
+            responsive web apps. Skilled in full-stack development, performance
+            optimization, and API integration. Looking to grow, collaborate with
+            experienced teams, and leverage my expertise on high-impact
+            projects.
           </motion.p>
 
           <div className="flex justify-center xl:hidden relative">
