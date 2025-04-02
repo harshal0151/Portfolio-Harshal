@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 // icons
-import { FaJs, FaReact, FaNode } from "react-icons/fa";
+import { FaJs, FaReact, FaNode, FaJava } from "react-icons/fa";
 
-import { SiExpress, SiMongodb, SiTailwindcss, SiRedux } from "react-icons/si";
+import { SiExpress, SiMongodb, SiTailwindcss, SiRedux, SiGithub, SiGit, SiPostman } from "react-icons/si";
 
 //  data
 const aboutData = [
@@ -11,17 +11,34 @@ const aboutData = [
     title: "skills",
     info: [
       {
+        title : "Programing ",
+        icons : [
+          <FaJs key="js" />,
+          <FaJava key = "java" />,
+        ]
+      },
+      {
         title: "Web Development",
         icons: [
-          <FaJs key="js" />,
+
           <FaReact key="react" />,
           <SiTailwindcss key="tailwindcss" />,
           <SiRedux key="redux" />,
           <FaNode key="node" />,
           <SiExpress key="express" />,
           <SiMongodb key="mongodb" />,
+          
         ],
       },
+      {
+        title: "Tools",
+        icons: [
+          <SiGithub key="github" />,
+          <SiGit key= "git"/>,
+          <SiPostman key = "postman" />
+
+        ]
+      }
     ],
   },
 
@@ -29,8 +46,8 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Frontend Developer Intern - At CraveDigi Advisors",
-        stage: "Oct 2023 - April 2024",
+        title: "Software Developer - Codiant Software Services",
+        stage: "Jsn 2023 - Present",
       },
     ],
   },
@@ -47,8 +64,8 @@ const aboutData = [
     title: "certification",
     info: [
       {
-        title: "MERN-stack Development",
-        stage: "",
+        title: "Full Stack Development",
+        stage: "2023-24",
       },
     ],
   },
@@ -93,11 +110,12 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-5 xl:mb-12 px-0.8 xl:px-0"
           >
-            I am a passionate Frontend Developer with a strong foundation in web
-            app development using the MERN stack. I&apos;ve gained over 6 months
-            of experience as a Frontend Intern at CraveDigi Advisors Pvt. Ltd. I
-            have honed my skills in building responsive and interactive web
-            applications.
+            Software Developer with over 2 + years of experience building
+            scalable, responsive web applications using React and JavaScript.
+            Delivered eight successful web products, specializing in UI/UX best
+            practices, API integration, and performance optimization. Skilled in
+            frontend development, state management, and reusable components
+            within agile teams
           </motion.p>
 
           {/* counter  */}
@@ -112,7 +130,7 @@ const About = () => {
               {/* experience  */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className=" text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <Countup start={0} end={6} duration={10} /> +
+                  <Countup start={0} end={26} duration={10} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   months of experience
@@ -132,7 +150,7 @@ const About = () => {
               {/* Projects  */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className=" text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <Countup start={0} end={5} duration={10} /> +
+                  <Countup start={0} end={12} duration={10} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   work on Projects

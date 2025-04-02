@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Avatar from "../components/Avatar";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import ProjectsBtn from "../components/ProjectsBtn";
-import Circles from '../components/Circles';
-import Bulb from '../components/Bulb';
-import Socials from '../components/Socials';
-
+import Circles from "../components/Circles";
+import Bulb from "../components/Bulb";
+import Socials from "../components/Socials";
 
 const Home = () => {
   const [showBetaNotification, setShowBetaNotification] = useState(true);
@@ -16,37 +15,45 @@ const Home = () => {
       <Bulb />
       <Circles />
       {/* text */}
-      <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
-        <div className='text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto'>
+      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
+        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           <motion.h1
-            variants={fadeIn('down', 0.2)}
+            variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
-            exit='hidden'
-            className="h1 mt-[4rem]">
+            exit="hidden"
+            className="h1 mt-[4rem]"
+          >
             Hello I&apos;m, Harshal Patil <br />
             <span className="text-accent">Web Developer</span>
           </motion.h1>
           <motion.p
-            variants={fadeIn('down', 0.3)}
+            variants={fadeIn("down", 0.3)}
             initial="hidden"
             animate="show"
-            exit='hidden'
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-16">
-            Graduate of computer science with experience working across the Web Developer. Looking for a role where I can grow and learn from experienced team members while drawing on project experience I have already successfully executed
+            exit="hidden"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-16"
+          >
+            Graduate in Computer Science and Software Developer with 2+ years of
+            experience building scalable, responsive web applications. I’ve
+            contributed to multiple high-impact projects, specializing in
+            full-stack development, performance optimization, and API
+            integration. Seeking a role where I can further grow, collaborate
+            with experienced teams, and continue to leverage my skills and
+            project experience.
           </motion.p>
 
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
           </div>
-          
 
           <motion.div
-            variants={fadeIn('down', 0.4)}
+            variants={fadeIn("down", 0.4)}
             initial="hidden"
             animate="show"
-            exit='hidden'
-            className="hidden xl:flex">
+            exit="hidden"
+            className="hidden xl:flex"
+          >
             <ProjectsBtn />
           </motion.div>
         </div>
@@ -61,18 +68,19 @@ const Home = () => {
 
         {/* Avatar img*/}
         <motion.div
-          variants={fadeIn('up', 0.5)}
+          variants={fadeIn("up", 0.5)}
           initial="hidden"
           animate="show"
-          exit='hidden'
-          transition={{ duration: 1, ease: 'easeInOut' }}
-          className="w-full h-full max-w-[537px] max-h-[548px] absolute -bottom-32 lg:bottom-5 lg:right-[5%] ">
+          exit="hidden"
+          transition={{ duration: 1, ease: "easeInOut" }}
+          className="w-full h-full max-w-[537px] max-h-[548px] absolute -bottom-32 lg:bottom-5 lg:right-[5%] "
+        >
           <Avatar />
-          <div className=' w-full m-10 px-[30px]'>
-         Email:  patilharshal0151@gmail.com
+          <div className=" w-full m-10 px-[30px]">
+            Email: patilharshal0151@gmail.com
           </div>
-          <div className='w-full m-10 px-[100px]'>
-          <Socials />
+          <div className="w-full m-10 px-[100px]">
+            <Socials />
           </div>
         </motion.div>
       </div>

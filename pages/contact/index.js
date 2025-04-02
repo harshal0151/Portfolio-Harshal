@@ -5,7 +5,7 @@ import { fadeIn } from "../../variants";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { ThreeDots } from "react-loader-spinner"; // Import the specific loader component
+import { ThreeDots } from "react-loader-spinner"; 
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -25,6 +25,8 @@ const Contact = () => {
         subject, 
         message,
       });
+
+     
 
       if (response.status === 200) {
         toast.success("Your message has been sent successfully!");
