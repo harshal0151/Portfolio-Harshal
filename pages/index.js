@@ -6,6 +6,7 @@ import ProjectsBtn from "../components/ProjectsBtn";
 import Circles from "../components/Circles";
 import Bulb from "../components/Bulb";
 import Socials from "../components/Socials";
+import Link from "next/link";
 
 const Home = () => {
   const [showBetaNotification, setShowBetaNotification] = useState(true);
@@ -41,19 +42,39 @@ const Home = () => {
             projects.
           </motion.p>
 
-          <div className="flex justify-center xl:hidden relative">
-            <ProjectsBtn />
-          </div>
+          
 
           <motion.div
-            variants={fadeIn("down", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="hidden xl:flex"
-          >
-            <ProjectsBtn />
-          </motion.div>
+  variants={fadeIn("down", 0.4)}
+  initial="hidden"
+  animate="show"
+  exit="hidden"
+  className="hidden xl:flex"
+>
+  <ProjectsBtn />
+</motion.div>
+
+
+<motion.div 
+variants={fadeIn("down", 0.4)}
+initial="hidden"
+animate="show"
+exit="hidden"
+className="xl:hidden">
+  <Link
+    href="/work"
+    className="inline-block px-6 py-3 bg-gradient-to-r from-pink-500 to-red-500
+               text-white font-semibold uppercase rounded-lg shadow-md 
+               transition-all duration-300 ease-in-out cursor-pointer 
+               hover:bg-gradient-to-l hover:from-red-500 hover:to-pink-500 
+               hover:-translate-y-1 hover:shadow-xl hover:scale-110"
+  >
+    Projects
+  </Link>
+</motion.div>
+
+
+
         </div>
       </div>
 
